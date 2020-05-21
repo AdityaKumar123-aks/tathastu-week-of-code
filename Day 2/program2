@@ -1,0 +1,11 @@
+# PRINT FIBONACCI SERIES UPTO nth NUMBER
+
+n = int(input("enter the number upto which do you want series :"))
+print("Fibonacci series is following :")
+a = 0
+b = 1
+for i in range(n):
+    print(a,end = " ")
+    c=a+b
+    a=b
+    b=c
