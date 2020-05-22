@@ -1,0 +1,5 @@
+# HOW DO YOU REVERSE A GIVEN STRING IN PLACE ?
+
+a = input("enter a string : ")
+reverse = a[::-1]
+print("the reversed string is :", reverse)
