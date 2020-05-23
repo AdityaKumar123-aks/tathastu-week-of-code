@@ -1,0 +1,19 @@
+# Program to sort tuple list ny Nth element of tuple.
+
+
+def Sorttuple(tup):
+    lst = len(tup)
+    for i in range(0, lst):
+
+        for j in range(0, lst-i-1):
+            if (tup[j][1] > tup[j + 1][1]):
+                temp = tup[j]
+                tup[j]= tup[j + 1]
+                tup[j + 1]= temp
+    return tup
+    
+tup =[('good', 24), ('and', 10), ('boys', 28),
+      ('A', 5), ('are', 20), ('B', 15)]
+
+print(Sorttuple(tup))
+
