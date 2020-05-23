@@ -1,0 +1,7 @@
+# FIND SECOND MAXIMUM VALUE IN DICTIONARY.
+
+dictionary = {1: 'ADITYA', 'Raman': 'you', 3: 'ADITYA'}
+val = list(dictionary.values())
+val.sort()
+res = val[-2]
+print(res)
