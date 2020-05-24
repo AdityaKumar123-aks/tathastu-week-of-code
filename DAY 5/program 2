@@ -1,0 +1,22 @@
+# Replace every element with the greatest element on right side.
+
+def ReplaceElements(arr, n): 
+ 
+    max_ele = arr[0] 
+    arr[0] = -1
+  
+    for i in range(1, n):  
+        if (max_ele > arr[i]): 
+            arr[i] = max_ele  
+        elif (max_ele <= arr[i]): 
+            temp = arr[i] 
+            arr[i] = max_ele 
+            max_ele = temp 
+  
+if __name__ == "__main__": 
+  
+    arr = [4, 5, 2, 1, 7, 6 ] 
+    n = len(arr) 
+    ReplaceElements(arr, n) 
+    for i in range (n): 
+        print( arr[i], end = " ") 
