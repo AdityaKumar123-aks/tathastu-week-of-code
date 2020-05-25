@@ -1,0 +1,23 @@
+# Program to find the smallest positive missing number 
+
+
+def findMissingPositive(arr, n): 
+	m = 1
+
+	x = [] 
+	for i in range(n): 
+		if (m < arr[i]): 
+			x.append(arr[i]) 
+	
+		elif (m == arr[i]): 
+			m = m + 1
+
+			while (x.count(m)): 
+				x.remove(m) 
+				m = m + 1
+	return m 
+if __name__ == '__main__': 
+	arr = [2, 3, -7, 6, 8, 1, -10, 15] 
+
+	n = len(arr) 
+	print(findMissingPositive(arr, n)) 
